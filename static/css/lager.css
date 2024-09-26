@@ -1,0 +1,115 @@
+/* Wareneingang Box Styling */
+.wareneingang-box {
+    background-color: #013301;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex; /* Combined display properties */
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%; /* Keeps the box within the container */
+}
+
+@media (max-width: 992px) {
+    .wareneingang-box {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wareneingang-box {
+        max-width: 98%;
+    }
+}
+
+/* Warenausgang Box Styling */
+.warenausgang-box {
+    background-color: #02a602;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex; /* Combined display properties */
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%; /* Keeps the box within the container */
+}
+
+@media (max-width: 992px) {
+    .warenausgang-box {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .warenausgang-box {
+        max-width: 98%;
+    }
+}
+
+/* Style the Custom File Input */
+#file-upload-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Adjust gap between text and icon */
+    margin-right: 10px; /* Add margin between button and file name input */
+    transition: background-color 0.2s ease;
+    border-radius: .25rem; /* Ensure button is rounded */
+}
+
+#file-upload-button:hover {
+    background-color: #dfe7df; /* Slight color change on hover */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.input-group .form-control {
+    margin-left: 10px; /* Adding spacing between the button and input */
+    border-radius: .25rem; /* Ensure input is rounded */
+}
+
+/* Form Styling */
+form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow around the form */
+    background-color: #f8f9fa; /* Light background color for the form */
+    margin-bottom: 40px; /* Adds some space between the form and the end of the page */
+}
+
+/* Selected Row Styling */
+.selected {
+    background-color: #d1ecf1 !important; 
+}
+
+/* Custom Accordion Styling */
+.accordion-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow around the accordion item */
+    background-color: #f8f9fa; /* Matches the form's background color */
+    margin-bottom: 40px; /* Consistent spacing with forms */
+    border-radius: 0.25rem; /* Rounded corners similar to forms */
+}
+
+.accordion-collapse {
+    /* Ensure the accordion body matches the form's styling */
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+    border-radius: 0 0 0.25rem 0.25rem; /* Rounded bottom corners */
+    padding: 20px; /* Adds padding similar to forms */
+}
+
+.accordion-button {
+    background-color: #adb9b0 !important; /* Green color */
+    box-shadow: none; /* Remove default shadow */
+    border: none; /* Remove default border */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #adb9b0 !important; /* green when expanded */
+}
+
+.accordion-button:hover {
+    background-color: #98b19e !important; /*  green on hover */
+}

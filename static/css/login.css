@@ -1,0 +1,267 @@
+/* Section: About Us */
+.about-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Custom margin for the about section */
+.about-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* Styling for section titles */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.section-title p {
+    color: var(--primary);
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* Customize buttons in the About section */
+.btn-custom {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+/* Footer styling */
+.footer {
+    background-color: var(--dark);
+    color: #b0b9ae;
+    padding: 50px 0;
+}
+
+.footer a {
+    color: #b0b9ae;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer h4 {
+    color: var(--primary);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .about-section-title {
+        font-size: 2rem;
+    }
+
+    .about-images img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Custom styling for buttons in the index page */
+.btn-primary-index {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-primary-index:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* Custom border for sections */
+.custom-section-border {
+    border-top: 2px solid var(--primary);
+    margin: 20px 0;
+}
+
+/* Newsletter styling */
+.newsletter-signup input {
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+}
+
+.newsletter-signup button {
+    background-color: var(--primary);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.newsletter-signup button:hover {
+    background-color: var(--secondary);
+}
+
+/* Custom list item styling in the footer */
+.footer .btn.btn-link::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light);
+}
+
+
+
+/* Footer business hours */
+.footer .business-hours h6 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Scroll to top button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary);
+}
+
+
+/* Styling for quick links in the footer */
+.footer .quick-links a {
+    color: #b0b9ae;
+    transition: color 0.3s ease;
+}
+
+.footer .quick-links a:hover {
+    color: white;
+}
+
+/* Footer quick links - Align to the left */
+.footer .quick-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .quick-links a {
+    flex: 0 50%; /* Make each link take 50% of the space */
+    color: #b0b9ae;
+    transition: color 0.3s ease;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px; /* Add space between the links */
+}
+
+.footer .quick-links a:hover {
+    color: white;
+}
+
+
+
+
+
+/* Custom styles for titles and paragraphs in the carousel */
+#id_carousel h5 {
+    font-size: 3rem;
+    margin-top: 3rem; /* mt-5 equivalent */
+}
+
+#id_carousel p {
+    font-size: 1.5rem;
+    margin-top: 1rem; /* mt-2 equivalent */
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    #id_carousel h5 {
+        font-size: 1.75rem; /* Smaller headline for mobile */
+        margin-top: 1.5rem;
+    }
+    #id_carousel p {
+        font-size: 1rem; /* Smaller paragraph for mobile */
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #id_carousel h5 {
+        font-size: 1.25rem; /* Further adjust headline for very small screens */
+    }
+    #id_carousel p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+}
+
+
+
+.separator-line {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid #ccc; /* Adjust thickness and color */
+    width: 70%; 
+}
+
+h4 {
+    margin-top: auto; /* Push the heading to the bottom */
+}
+
+
+#register-form {
+    display: none;
+}
+
+
+/* Custom button style for green color */
+.btn-custom-green {
+    background-color: #3ca163 !important;
+    border-color: #3ca163 !important;
+    color: #fff !important;
+    padding: 10px 20px; /* Add padding to make sure it looks good */
+    font-size: 16px; /* Ensure the font size is clear */
+    display: inline-block; /* Make sure it's displayed as a block-level button */
+}
+
+/* Hover state */
+.btn-custom-green:hover {
+    background-color: #013b0f !important;
+    border-color: #013b0f !important;
+    color: #fff !important;
+}
+
+/* Style for input fields to have smaller font size */
+input.form-control {
+    font-size: 14px; /* Set the desired font size */
+}
+
+input::placeholder {
+    font-size: 14px; /* Set the desired font size for placeholder text */
+}
+

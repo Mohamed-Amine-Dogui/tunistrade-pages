@@ -1,0 +1,93 @@
+/* crmIn Box Styling */
+.crmIn-box {
+    background-color: #013301;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    /* Flexbox adjustments for centering */
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%; /* Optional: This keeps the box within the container */
+}
+
+@media (max-width: 992px) {
+    .crmIn-box {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .crmIn-box {
+        max-width: 98%;
+    }
+}
+
+/* crmUpdate Box Styling */
+.crmUpdate-box {
+    background-color: #02a602;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    /* Flexbox adjustments for centering */
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%; /* Keeps the box within the container */
+}
+
+@media (max-width: 992px) {
+    .crmUpdate-box {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .crmUpdate-box {
+        max-width: 98%;
+    }
+}
+
+/* Style the Custom File Input */
+#file-upload-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Adjust gap between text and icon */
+    margin-right: 10px; /* Add margin between button and file name input */
+    transition: background-color 0.2s ease;
+    border-radius: .25rem; /* Ensure button is rounded */
+}
+
+#file-upload-button:hover {
+    background-color: #dfe7df; /* Slight color change on hover */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.input-group .form-control {
+    margin-left: 10px; /* Adding spacing between the button and input */
+    border-radius: .25rem; /* Ensure input is rounded */
+}
+
+
+/* Form Styling */
+
+form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow around the form */
+    background-color: #f8f9fa; /* Light background color for the form */
+    margin-bottom: 40px; /* Adds some space between the form and the end of the page */
+}
+
+/* Add this CSS to highlight the selected row */
+.selected {
+    background-color: #d1ecf1 !important;
+}

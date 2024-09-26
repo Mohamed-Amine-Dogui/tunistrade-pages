@@ -1,0 +1,62 @@
+/* General styling for the canvas container */
+.canvas-container {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    margin-bottom: 20px; /* Adds space between chart and other content */
+}
+
+/* Responsive styling for canvas container */
+@media (max-width: 768px) {
+    .canvas-container {
+        height: 30vh;  /* Smaller height for mobile */
+        margin-bottom: 50px; /* Adds space for mobile view */
+    }
+}
+
+/* Add padding to the bottom of the body for extra space */
+body {
+    padding-bottom: 50px;
+}
+
+/* Bootstrap calendar icon styling */
+.input-group-text {
+    background-color: white; /* Match the background of the input field */
+    border-left: none; /* Remove left border for better alignment */
+}
+
+input.form-control {
+    border-right: none; /* Remove right border to avoid double borders between input and icon */
+}
+
+/* Responsive styling for small date pickers */
+#start-date, #end-date {
+    padding: 0.5rem; /* Make inputs smaller */
+    font-size: 0.9rem; /* Default font size */
+}
+
+@media (max-width: 768px) {
+    #start-date, #end-date {
+        font-size: 0.85rem; /* Adjust font size for mobile */
+    }
+
+    .input-group {
+        width: 100%; /* Full width for inputs on smaller screens */
+        margin-bottom: 1rem; /* Adds space between the inputs in mobile */
+    }
+}
+
+/* General container styling */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Max width for large screens */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Additional responsive styling for the chart container */
+@media (max-width: 768px) {
+    .canvas-container {
+        height: 30vh; /* Smaller height for mobile */
+        margin-bottom: 30px; /* Adds extra space in mobile view */
+    }
+}

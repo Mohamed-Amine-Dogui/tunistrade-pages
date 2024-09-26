@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TunisTrade - Onlineshop für nachhaltige und biologische Produkte aus Tunesien</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Favicon -->
+    <link href="img/TunisTrade.ico" rel="icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- SEO Optimized Meta Description -->
+    <meta name="description"
+        content="TunisTrade bietet nachhaltige, biologische und fair gehandelte Produkte wie Olivenöl, Datteln und Aloe Vera direkt aus Tunesien. Unser Angebot richtet sich an B2B- und B2C-Kunden.">
+    <meta name="keywords"
+        content="TunisTrade, Bio-Produkte, Fairtrade, Olivenöl, Datteln, Aloe Vera, Tunesische Produkte, B2B, B2C, Nachhaltig, Import, Deutschland">
+
+</head>
+
+<body>
+    <!-- Free-floating logo -->
+    <a href="index.html">
+        <img src="img/TunisTrade.png" alt="TunisTrade Logo" id="logo-img" class="img-fluid">
+    </a>
+
+    <!-- Navigation bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg custom-navbar w-100 navbar-dark bg-gradient">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse custom-navbar-content" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link hover-effect" href="index.html">Startseite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-effect" href="onlineshop.html">Onlineshop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-effect" href="b2b.html">B2B</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-effect" href="bestellungen.html">Bestellungen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active hover-effect" href="login.html"><i class="bi bi-person"></i> Anmelden</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Formulare Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <!-- Login Formular -->
+                <div id="login-form" class="col-md-6 col-lg-5">
+                    <h3 class="mb-4 text-center">Anmeldung</h3>
+                    <form action="/login" method="post">
+                        <!-- Benutzername -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="login-username">Benutzername</label>
+                            <input type="text" id="login-username" name="username" class="form-control form-control-lg"
+                                placeholder="Geben Sie Ihren Benutzernamen ein" required />
+                        </div>
+
+                        <!-- Passwort -->
+                        <div class="form-outline mb-3">
+                            <label class="form-label" for="login-password">Passwort</label>
+                            <input type="password" id="login-password" name="password"
+                                class="form-control form-control-lg" placeholder="Geben Sie Ihr Passwort ein"
+                                required />
+                        </div>
+
+                        <!-- Angemeldet bleiben und Passwort vergessen -->
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="rememberMe" />
+                                <label class="form-check-label" for="rememberMe">
+                                    Angemeldet bleiben
+                                </label>
+                            </div>
+                            <a href="#" id="show-forgot-password-form" class="text-body">Passwort vergessen?</a>
+                        </div>
+
+                        <!-- Anmelden Button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-lg btn-block btn-custom-green">Anmelden</button>
+                        </div>
+
+                        <!-- Registrieren Link -->
+                        <p class="text-center text-muted mt-4 mb-0">Noch kein Konto? <a href="#" id="show-register-form"
+                                class="fw-bold text-body"><u>Jetzt registrieren</u></a></p>
+                    </form>
+                </div>
+
+
+                <!-- Registration Form -->
+                <div id="register-form" class="col-md-6 col-lg-5" style="display: none;">
+                    <h3 class="mb-4 text-center">Registrierung</h3>
+                    <form action="/register" method="post">
+                        <!-- Benutzername -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="register-username">Benutzername</label>
+                            <input type="text" id="register-username" name="username"
+                                class="form-control form-control-lg" placeholder="Wählen Sie einen Benutzernamen"
+                                required />
+                        </div>
+
+                        <!-- E-Mail -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="register-email">E-Mail</label>
+                            <input type="email" id="register-email" name="email" class="form-control form-control-lg"
+                                placeholder="Geben Sie Ihre E-Mail-Adresse ein" required />
+                        </div>
+
+                        <!-- Passwort -->
+                        <div class="form-outline mb-3">
+                            <label class="form-label" for="register-password">Passwort</label>
+                            <input type="password" id="register-password" name="password"
+                                class="form-control form-control-lg" placeholder="Erstellen Sie ein Passwort"
+                                required />
+
+                            <!-- Password toggle checkbox -->
+                            <div class="form-check mt-2">
+                                <input type="checkbox" class="form-check-input" id="show-password">
+                                <label class="form-check-label" for="show-password">Passwort anzeigen</label>
+                            </div>
+
+                            <!-- Password requirements -->
+                            <small id="password-help" class="form-text text-muted">
+                                Passwort muss mindestens 8 Zeichen, einen Großbuchstaben, eine Zahl und ein
+                                Sonderzeichen enthalten.
+                            </small>
+                        </div>
+
+                        <!-- Passwort bestätigen -->
+                        <div class="form-outline mb-3">
+                            <label class="form-label" for="confirm-password">Passwort bestätigen</label>
+                            <input type="password" id="confirm-password" name="confirm_password"
+                                class="form-control form-control-lg" placeholder="Passwort bestätigen" required />
+                        </div>
+
+                        <!-- Error message for invalid password -->
+                        <div id="password-error" style="color:red; display:none;">
+                            Passwort muss mindestens 8 Zeichen, einen Großbuchstaben, eine Zahl und ein Sonderzeichen
+                            enthalten.
+                        </div>
+
+                        <!-- Registrieren Button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-lg btn-block btn-custom-green">Registrieren</button>
+                        </div>
+
+                        <!-- Anmelden Link -->
+                        <p class="text-center text-muted mt-4 mb-0">Bereits ein Konto? <a href="#" id="show-login-form"
+                                class="fw-bold text-body"><u>Jetzt anmelden</u></a></p>
+                    </form>
+                </div>
+
+
+                <!-- Forgot Password Form -->
+                <div id="forgot-password-form" class="col-md-6 col-lg-5" style="display: none;">
+                    <h3 class="mb-4 text-center">Passwort vergessen</h3>
+                    <form action="/forgot-password" method="post">
+                        <!-- E-Mail -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="forgot-email">E-Mail</label>
+                            <input type="email" id="forgot-email" name="email" class="form-control form-control-lg"
+                                placeholder="Geben Sie Ihre E-Mail-Adresse ein" required />
+                        </div>
+
+                        <!-- Telefonnummer (optional) -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="forgot-phone">Telefonnummer (optional)</label>
+                            <input type="tel" id="forgot-phone" name="phone" class="form-control form-control-lg"
+                                placeholder="Geben Sie Ihre Telefonnummer ein" />
+                        </div>
+
+                        <!-- Zurück zum Login -->
+                        <div class="text-center mb-3">
+                            <button type="submit" class="btn btn-lg btn-block btn-custom-green">Passwort
+                                zurücksetzen</button>
+                        </div>
+
+                        <p class="text-center text-muted mt-4 mb-0">Zurück zum <a href="#"
+                                id="show-login-form-from-forgot" class="fw-bold text-body"><u>Anmeldung</u></a>
+                        </p>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Formulare Ende -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 style="color: var(--primary-green);" class="mb-4">Kontaktdaten</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="color: var(--primary-green);"></i>123
+                        Straße, Berlin,
+                        Deutschland</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: var(--primary-green);"></i>+49 123
+                        456789</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"
+                            style="color: var(--primary-green);"></i>info@tunistrade.de</p>
+                    <div class="d-flex pt-3">
+                        <!-- Facebook button -->
+                        <a class="btn btn-square rounded-circle" style="background-color: #1877F2;" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Instagram button -->
+                        <a class="btn btn-square rounded-circle ms-2" style="background-color: #E1306C;" href="#"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 style="color: var(--primary-green);" class="mb-4">Schnellzugriff</h4>
+                    <ul class="quick-links">
+                        <li><a class="btn" href="#"><i class="fa fa-angle-right me-2"></i>Kontaktiert uns</a></li> <br>
+                        <li><a class="btn" href="#"><i class="fa fa-angle-right me-2"></i>AGB</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 style="color: var(--primary-green);" class="mb-4">Geschäftszeiten</h4>
+                    <p class="mb-1">Montag - Freitag</p>
+                    <h6 class="text-light">09:00 Uhr - 19:00 Uhr</h6>
+                    <p class="mb-1">Samstag</p>
+                    <h6 class="text-light">09:00 Uhr - 12:00 Uhr</h6>
+                    <p class="mb-1">Sonntag</p>
+                    <h6 class="text-light">Geschlossen</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 style="color: var(--primary-green);" class="mb-4">Newsletter</h4>
+                    <p>Erhalten Sie die neuesten Informationen und Angebote direkt in Ihr Postfach.</p>
+                    <div class="position-relative w-100">
+                        <input id="newsletter_input" class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                            type="text" placeholder="Ihre E-Mail">
+                        <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2"
+                            style="background-color: var(--primary-green); color: white;">Abonnieren</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Ende -->
+
+    <!-- Back to Top -->
+    <a id="up-button" href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Page-specific code -->
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

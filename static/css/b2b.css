@@ -1,0 +1,238 @@
+/* Section: About Us */
+.about-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Custom margin for the about section */
+.about-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* Styling for section titles */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.section-title p {
+    color: var(--primary);
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* Customize buttons in the About section */
+.btn-custom {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+/* Footer styling */
+.footer {
+    background-color: var(--dark);
+    color: #b0b9ae;
+    padding: 50px 0;
+}
+
+.footer a {
+    color: #b0b9ae;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer h4 {
+    color: var(--primary);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .about-section-title {
+        font-size: 2rem;
+    }
+
+    .about-images img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Custom styling for buttons in the index page */
+.btn-primary-index {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-primary-index:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* Custom border for sections */
+.custom-section-border {
+    border-top: 2px solid var(--primary);
+    margin: 20px 0;
+}
+
+/* Newsletter styling */
+.newsletter-signup input {
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+}
+
+.newsletter-signup button {
+    background-color: var(--primary);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.newsletter-signup button:hover {
+    background-color: var(--secondary);
+}
+
+/* Custom list item styling in the footer */
+.footer .btn.btn-link::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light);
+}
+
+
+
+/* Footer business hours */
+.footer .business-hours h6 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Scroll to top button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary);
+}
+
+
+/* Styling for quick links in the footer */
+.footer .quick-links a {
+    color: #b0b9ae;
+    transition: color 0.3s ease;
+}
+
+.footer .quick-links a:hover {
+    color: white;
+}
+
+/* Footer quick links - Align to the left */
+.footer .quick-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .quick-links a {
+    flex: 0 50%; /* Make each link take 50% of the space */
+    color: #b0b9ae;
+    transition: color 0.3s ease;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px; /* Add space between the links */
+}
+
+.footer .quick-links a:hover {
+    color: white;
+}
+
+/* Custom button style for green color */
+.btn-custom-green {
+    background-color: #3ca163 !important;
+    border-color: #3ca163 !important;
+    color: #fff !important;
+    padding: 10px 20px; /* Add padding to make sure it looks good */
+    font-size: 16px; /* Ensure the font size is clear */
+    display: inline-block; /* Make sure it's displayed as a block-level button */
+}
+
+/* Hover state */
+.btn-custom-green:hover {
+    background-color: #013b0f !important;
+    border-color: #013b0f !important;
+    color: #fff !important;
+}
+
+
+/* Reduce the margin between the B2B description and contact section */
+.container-xxl.py-5 + .container {
+    margin-top: -60px; /* Reduce the space between sections */
+}
+
+/* Limit the width of the product lists on larger screens */
+.list-group {
+    max-width: 500px; /* Set a max-width for the list */
+    margin-left: 3%;   /* Align the list to the left */
+}
+
+/*  Add a bit of padding for a cleaner look */
+.list-group-item {
+    padding: 15px 20px;
+}
+
+
+/* Ensure it looks good on mobile (optional) */
+@media (max-width: 768px) {
+    .list-group {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Set the width of the Nachricht textarea to 100% */
+#message {
+    width: 100%;   /* Make the textarea full-width */
+    max-width: 100%;  /* Ensure it scales properly */
+}
+
+#companyName, #contactName, #emailAddress, #phone {
+    width: 350px;   
+    max-width: 100%;  
+}

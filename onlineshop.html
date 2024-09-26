@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TunisTrade - Onlineshop für nachhaltige und biologische Produkte aus Tunesien</title>
+    <!-- Favicon -->
+    <link href="img/TunisTrade.ico" rel="icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/onlineshop.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- SEO Optimized Meta Description -->
+    <meta name="description"
+        content="TunisTrade bietet eine breite Auswahl an nachhaltigen, biologischen und fair gehandelten Produkten direkt aus Tunesien. Unser Sortiment umfasst Olivenöl, Datteln, Aloe Vera, tunesische Patisserie & Konfekt sowie viele weitere exklusive Produkte. Geeignet für B2B- und B2C-Kunden.">
+    <meta name="keywords"
+        content="TunisTrade, Bio-Produkte, Fairtrade, Olivenöl, Datteln, Aloe Vera, Patisserie, Konfekt, Tunesische Produkte, Import, Deutschland, onlineshop, B2B, B2C, Nachhaltig, Exklusive Produkte">
+
+
+</head>
+
+<body>
+    <!-- Free-floating logo -->
+    <a href="index.html">
+        <img src="img/TunisTrade.png" alt="TunisTrade Logo" id="logo-img" class="img-fluid">
+    </a>
+
+    <!-- Top Navigation Bar Start -->
+    <nav id="navbar" class="navbar navbar-expand-lg custom-navbar w-100 navbar-dark bg-gradient">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
+            aria-controls="navbarTop" aria-expanded="false" aria-label="Navigation umschalten">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse custom-navbar-content" id="navbarTop">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link hover-effect" href="index.html">Startseite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active hover-effect" href="onlineshop.html">Onlineshop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-effect" href="b2b.html">B2B</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-effect" href="bestellungen.html">Bestellungen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-effect" href="login.html"><i class="bi bi-person"></i> Anmelden</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Top Navigation Bar End -->
+
+
+    <!-- Bottom Bar Start -->
+    <div class="bottom-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Empty space for desktop (col-md-2) but removed for mobile -->
+                <div class="col-md-2 d-none d-md-block"></div>
+
+                <!-- Search input and button for desktop (col-md-5) and mobile (col-7) -->
+                <div class="col-md-5 col-7 order-2 order-md-1">
+                    <div class="search">
+                        <input id="search_input" type="text" placeholder="Search">
+                        <button id="search_button"><i id="search_icon" class="fa fa-search"></i></button>
+                    </div>
+                </div>
+
+                <!-- Cart button for desktop (col-md-2) and mobile (col-3) -->
+                <div class="col-md-2 col-3 order-1 order-md-2">
+                    <div class="user">
+                        <a id="cart_button" href="cart.html" class="btn cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>(0)</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Empty space for desktop (col-md-3) but removed for mobile -->
+                <div class="col-md-3 d-none d-md-block"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Bar End -->
+
+
+    <!-- Container for Vertical Navbar and Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Vertikale Navigationsleiste Start -->
+            <nav id="vertical-navbar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" href="#" data-category="alle">
+                                <i class="bi bi-caret-right-fill me-2"></i>
+                                Alle Produkte
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" href="#" data-category="dattel">
+                                <i class="bi bi-caret-right-fill me-2"></i>
+                                Dattel-Produkte
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" href="#" data-category="aloe-vera">
+                                <i class="bi bi-caret-right-fill me-2"></i>
+                                Aloe Vera Produkte
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" href="#" data-category="olivenoel">
+                                <i class="bi bi-caret-right-fill me-2"></i>
+                                Olivenöl-Produkte
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" href="#" data-category="konfekt">
+                                <i class="bi bi-caret-right-fill me-2"></i>
+                                Patisserie & Konfekt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Vertikale Navigationsleiste End -->
+
+
+            <!-- Hauptinhalt Start -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="container py-5">
+                    <div class="row">
+                        <!-- Aloe Vera Gel Karte -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-category="aloe-vera" style="cursor: pointer;">
+                                <!-- Bild in einem Link mit Modal-Trigger-Attributen -->
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalAloeVeraGel">
+                                    <img src="img/aloe_vera_gel.png" class="card-img-top" alt="Aloe Vera Gel">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Aloe Vera Gel</h5>
+
+                                    <!-- Flex container for price and buttons -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!-- Button group -->
+                                        <div class="btn-group" role="group" aria-label="Warenkorb Steuerung">
+                                            <!-- Minus-Button -->
+                                            <button type="button" class="btn btn-danger btn-decrease"
+                                                aria-label="Produkt entfernen">
+                                                <i class="bi bi-cart-dash-fill"></i>
+                                            </button>
+                                            <!-- Anzahl Anzeige (Eingabefeld) -->
+                                            <input type="number" class="form-control btn-count" value="0" min="0"
+                                                max="999" aria-label="Anzahl des Produkts" />
+                                            <!-- Plus-Button -->
+                                            <button type="button" class="btn btn-custom-green btn-increase"
+                                                aria-label="Produkt hinzufügen">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                            </button>
+                                        </div>
+
+                                        <!-- Price aligned to the right -->
+                                        <p class="card-price mb-0">99.99€</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Aloe Vera Saft Karte -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-category="aloe-vera" style="cursor: pointer;">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalAloeVeraSaft">
+                                    <img src="img/aloe_vera_saft.png" class="card-img-top" alt="Aloe Vera Saft">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Aloe Vera Saft</h5>
+                                    <!-- Flex container for price and buttons -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!-- Button group -->
+                                        <div class="btn-group" role="group" aria-label="Warenkorb Steuerung">
+                                            <!-- Minus-Button -->
+                                            <button type="button" class="btn btn-danger btn-decrease"
+                                                aria-label="Produkt entfernen">
+                                                <i class="bi bi-cart-dash-fill"></i>
+                                            </button>
+                                            <!-- Anzahl Anzeige (Eingabefeld) -->
+                                            <input type="number" class="form-control btn-count" value="0" min="0"
+                                                max="999" aria-label="Anzahl des Produkts" />
+                                            <!-- Plus-Button -->
+                                            <button type="button" class="btn btn-custom-green btn-increase"
+                                                aria-label="Produkt hinzufügen">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                            </button>
+                                        </div>
+                                        <!-- Price aligned to the right -->
+                                        <p class="card-price mb-0">99.99€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Olivenöl Karte -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-category="olivenoel" style="cursor: pointer;">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalOlivenoel">
+                                    <img src="img/olive_1L.png" class="card-img-top" alt="Olivenöl">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Olivenöl</h5>
+                                    <!-- Flex container for price and buttons -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!-- Button group -->
+                                        <div class="btn-group" role="group" aria-label="Warenkorb Steuerung">
+                                            <!-- Minus-Button -->
+                                            <button type="button" class="btn btn-danger btn-decrease"
+                                                aria-label="Produkt entfernen">
+                                                <i class="bi bi-cart-dash-fill"></i>
+                                            </button>
+                                            <!-- Anzahl Anzeige (Eingabefeld) -->
+                                            <input type="number" class="form-control btn-count" value="0" min="0"
+                                                max="999" aria-label="Anzahl des Produkts" />
+                                            <!-- Plus-Button -->
+                                            <button type="button" class="btn btn-custom-green btn-increase"
+                                                aria-label="Produkt hinzufügen">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                            </button>
+                                        </div>
+                                        <!-- Price aligned to the right -->
+                                        <p class="card-price mb-0">99.99€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Datteln - 500g Karte -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-category="dattel" style="cursor: pointer;">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalDatteln500g">
+                                    <img src="img/datte-500.png" class="card-img-top" alt="Datteln-500g">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Datteln - 500g</h5>
+                                    <!-- Flex container for price and buttons -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!-- Button group -->
+                                        <div class="btn-group" role="group" aria-label="Warenkorb Steuerung">
+                                            <!-- Minus-Button -->
+                                            <button type="button" class="btn btn-danger btn-decrease"
+                                                aria-label="Produkt entfernen">
+                                                <i class="bi bi-cart-dash-fill"></i>
+                                            </button>
+                                            <!-- Anzahl Anzeige (Eingabefeld) -->
+                                            <input type="number" class="form-control btn-count" value="0" min="0"
+                                                max="999" aria-label="Anzahl des Produkts" />
+                                            <!-- Plus-Button -->
+                                            <button type="button" class="btn btn-custom-green btn-increase"
+                                                aria-label="Produkt hinzufügen">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                            </button>
+                                        </div>
+                                        <!-- Price aligned to the right -->
+                                        <p class="card-price mb-0">99.99€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Datteln - 1000g Karte -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-category="dattel" style="cursor: pointer;">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalDatteln1000g">
+                                    <img src="img/datte-1000.png" class="card-img-top" alt="Datteln-1000g">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Datteln - 1000g</h5>
+                                    <!-- Flex container for price and buttons -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!-- Button group -->
+                                        <div class="btn-group" role="group" aria-label="Warenkorb Steuerung">
+                                            <!-- Minus-Button -->
+                                            <button type="button" class="btn btn-danger btn-decrease"
+                                                aria-label="Produkt entfernen">
+                                                <i class="bi bi-cart-dash-fill"></i>
+                                            </button>
+                                            <!-- Anzahl Anzeige (Eingabefeld) -->
+                                            <input type="number" class="form-control btn-count" value="0" min="0"
+                                                max="999" aria-label="Anzahl des Produkts" />
+                                            <!-- Plus-Button -->
+                                            <button type="button" class="btn btn-custom-green btn-increase"
+                                                aria-label="Produkt hinzufügen">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                            </button>
+                                        </div>
+                                        <!-- Price aligned to the right -->
+                                        <p class="card-price mb-0">99.99€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Datteln-Haselnüsse Karte -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-category="dattel" style="cursor: pointer;">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalDattelnHaselnuss">
+                                    <img src="img/datte-noisette.jpg" class="card-img-top" alt="Datteln-Haselnüsse">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Datteln-Haselnüsse</h5>
+                                    <!-- Flex container for price and buttons -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!-- Button group -->
+                                        <div class="btn-group" role="group" aria-label="Warenkorb Steuerung">
+                                            <!-- Minus-Button -->
+                                            <button type="button" class="btn btn-danger btn-decrease"
+                                                aria-label="Produkt entfernen">
+                                                <i class="bi bi-cart-dash-fill"></i>
+                                            </button>
+                                            <!-- Anzahl Anzeige (Eingabefeld) -->
+                                            <input type="number" class="form-control btn-count" value="0" min="0"
+                                                max="999" aria-label="Anzahl des Produkts" />
+                                            <!-- Plus-Button -->
+                                            <button type="button" class="btn btn-custom-green btn-increase"
+                                                aria-label="Produkt hinzufügen">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                            </button>
+                                        </div>
+                                        <!-- Price aligned to the right -->
+                                        <p class="card-price mb-0">99.99€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Konfekt-Pistazien Mischung Karte -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-category="konfekt" style="cursor: pointer;">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalKonfektPistazienMischung">
+                                    <img src="img/melange-pistache.jpg" class="card-img-top"
+                                        alt="Konfekt-Pistazien-Mischung">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Konfekt-Pistazien-Mischung</h5>
+                                    <!-- Flex container for price and buttons -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!-- Button group -->
+                                        <div class="btn-group" role="group" aria-label="Warenkorb Steuerung">
+                                            <!-- Minus-Button -->
+                                            <button type="button" class="btn btn-danger btn-decrease"
+                                                aria-label="Produkt entfernen">
+                                                <i class="bi bi-cart-dash-fill"></i>
+                                            </button>
+                                            <!-- Anzahl Anzeige (Eingabefeld) -->
+                                            <input type="number" class="form-control btn-count" value="0" min="0"
+                                                max="999" aria-label="Anzahl des Produkts" />
+                                            <!-- Plus-Button -->
+                                            <button type="button" class="btn btn-custom-green btn-increase"
+                                                aria-label="Produkt hinzufügen">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                            </button>
+                                        </div>
+                                        <!-- Price aligned to the right -->
+                                        <p class="card-price mb-0">99.99€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Konfekt-Mandel-Mischung Karte -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-category="konfekt" style="cursor: pointer;">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalKonfektMandelMischung">
+                                    <img src="img/konfekt-mandel.jpg" class="card-img-top"
+                                        alt="Konfekt-Mandel-Mischung">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Konfekt-Mandel-Mischung</h5>
+                                    <!-- Flex container for price and buttons -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!-- Button group -->
+                                        <div class="btn-group" role="group" aria-label="Warenkorb Steuerung">
+                                            <!-- Minus-Button -->
+                                            <button type="button" class="btn btn-danger btn-decrease"
+                                                aria-label="Produkt entfernen">
+                                                <i class="bi bi-cart-dash-fill"></i>
+                                            </button>
+                                            <!-- Anzahl Anzeige (Eingabefeld) -->
+                                            <input type="number" class="form-control btn-count" value="0" min="0"
+                                                max="999" aria-label="Anzahl des Produkts" />
+                                            <!-- Plus-Button -->
+                                            <button type="button" class="btn btn-custom-green btn-increase"
+                                                aria-label="Produkt hinzufügen">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                            </button>
+                                        </div>
+                                        <!-- Price aligned to the right -->
+                                        <p class="card-price mb-0">99.99€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Konfekt-Mischung Karte -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-category="konfekt" style="cursor: pointer;">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalKonfektMischung">
+                                    <img src="img/konfekt-mix.jpg" class="card-img-top" alt="Konfekt-Mischung">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Konfekt-Mischung</h5>
+                                    <!-- Flex container for price and buttons -->
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <!-- Button group -->
+                                        <div class="btn-group" role="group" aria-label="Warenkorb Steuerung">
+                                            <!-- Minus-Button -->
+                                            <button type="button" class="btn btn-danger btn-decrease"
+                                                aria-label="Produkt entfernen">
+                                                <i class="bi bi-cart-dash-fill"></i>
+                                            </button>
+                                            <!-- Anzahl Anzeige (Eingabefeld) -->
+                                            <input type="number" class="form-control btn-count" value="0" min="0"
+                                                max="999" aria-label="Anzahl des Produkts" />
+                                            <!-- Plus-Button -->
+                                            <button type="button" class="btn btn-custom-green btn-increase"
+                                                aria-label="Produkt hinzufügen">
+                                                <i class="bi bi-cart-plus-fill"></i>
+                                            </button>
+                                        </div>
+                                        <!-- Price aligned to the right -->
+                                        <p class="card-price mb-0">99.99€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modals für Produkte -->
+                <!-- Modal Aloe Vera Gel -->
+                <div class="modal fade" id="modalAloeVeraGel" tabindex="-1" aria-labelledby="modalAloeVeraGelLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalAloeVeraGelLabel">Aloe Vera Gel</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/aloe_vera_gel.png" class="img-fluid mb-3" alt="Aloe Vera Gel">
+                                <p>Unser hochwertiges Aloe Vera Gel ist perfekt für die Hautpflege. Es spendet
+                                    Feuchtigkeit und
+                                    beruhigt gereizte Haut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Aloe Vera Saft -->
+                <div class="modal fade" id="modalAloeVeraSaft" tabindex="-1" aria-labelledby="modalAloeVeraSaftLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalAloeVeraSaftLabel">Aloe Vera Saft</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/aloe_vera_saft.png" class="img-fluid mb-3" alt="Aloe Vera Saft">
+                                <p>Unser hochwertiger Aloe Vera Saft ist perfekt zur inneren Anwendung. Er unterstützt
+                                    die
+                                    Verdauung und stärkt das Immunsystem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Olivenöl -->
+                <div class="modal fade" id="modalOlivenoel" tabindex="-1" aria-labelledby="modalOlivenoelLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalOlivenoelLabel">Olivenöl</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/olive_1L.png" class="img-fluid mb-3" alt="Olivenöl">
+                                <p>Unser natives Olivenöl Extra ist kaltgepresst und von höchster Qualität. Ideal zum
+                                    Kochen und für Salate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Datteln - 500g -->
+                <div class="modal fade" id="modalDatteln500g" tabindex="-1" aria-labelledby="modalDatteln500gLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalDatteln500gLabel">Datteln - 500g</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/datte-500.png" class="img-fluid mb-3" alt="Datteln-500g">
+                                <p>Unsere Datteln sind süß und saftig, perfekt als Snack oder für die Zubereitung von
+                                    Desserts.
+                                    Verpackt in praktischen 500g-Packungen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Datteln - 1000g -->
+                <div class="modal fade" id="modalDatteln1000g" tabindex="-1" aria-labelledby="modalDatteln1000gLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalDatteln1000gLabel">Datteln - 1000g</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/datte-1000.png" class="img-fluid mb-3" alt="Datteln-1000g">
+                                <p>Unsere Datteln sind süß und saftig, perfekt als Snack oder für die Zubereitung von
+                                    Desserts.
+                                    Verpackt in großzügigen 1000g-Packungen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Datteln-Haselnüsse -->
+                <div class="modal fade" id="modalDattelnHaselnuss" tabindex="-1"
+                    aria-labelledby="modalDattelnHaselnussLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalDattelnHaselnussLabel">Datteln-Haselnüsse</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/datte-noisette.jpg" class="img-fluid mb-3" alt="Datteln-Haselnüsse">
+                                <p>Unsere Datteln-Haselnüsse-Mischung kombiniert die Süße der Datteln mit dem nussigen
+                                    Geschmack der
+                                    Haselnüsse. Ideal als gesunder Snack oder für kreative Backrezepte.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Konfekt-Pistazien-Mischung -->
+                <div class="modal fade" id="modalKonfektPistazienMischung" tabindex="-1"
+                    aria-labelledby="modalKonfektPistazienMischungLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalKonfektPistazienMischungLabel">
+                                    Konfekt-Pistazien-Mischung</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/melange-pistache.jpg" class="img-fluid mb-3"
+                                    alt="Konfekt-Pistazien-Mischung">
+                                <p>Unsere Konfekt-Pistazien-Mischung vereint die zarten Aromen von Pistazien mit
+                                    hochwertigem
+                                    Konfekt. Perfekt für besondere Anlässe oder als luxuriöses Geschenk.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal Konfekt-Mandel-Mischung -->
+                <div class="modal fade" id="modalKonfektMandelMischung" tabindex="-1"
+                    aria-labelledby="modalKonfektMandelMischungLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalKonfektMandelMischungLabel">Konfekt-Mandel-Mischung
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/konfekt-mandel.jpg" class="img-fluid mb-3" alt="Konfekt-Mandel-Mischung">
+                                <p>Unsere Konfekt-Mandel-Mischung vereint die zarten Aromen von Mandeln mit feinem,
+                                    hochwertigem Konfekt. Perfekt für besondere Anlässe oder als luxuriöses Geschenk.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal Konfekt-Mischung -->
+                <div class="modal fade" id="modalKonfektMischung" tabindex="-1"
+                    aria-labelledby="modalKonfektMischungLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalKonfektMischungLabel">Konfekt-Mischung</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/konfekt-mix.jpg" class="img-fluid mb-3" alt="Konfekt-Mischung">
+                                <p>Unsere Konfekt-Mischung ist eine ausgewogene Auswahl an süßen Leckereien, perfekt für
+                                    jeden Anlass. Genießen Sie eine Vielfalt an hochwertigen Konfekten in einer
+                                    praktischen Mischung.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </main>
+            <!-- Hauptinhalt End -->
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 style="color: var(--primary-green);" class="mb-4">Kontaktdaten</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="color: var(--primary-green);"></i>123
+                        Straße, Berlin,
+                        Deutschland</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: var(--primary-green);"></i>+49 123
+                        456789</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"
+                            style="color: var(--primary-green);"></i>info@tunistrade.de</p>
+                    <div class="d-flex pt-3">
+                        <!-- Facebook button -->
+                        <a class="btn btn-square rounded-circle" style="background-color: #1877F2;" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Instagram button -->
+                        <a class="btn btn-square rounded-circle ms-2" style="background-color: #E1306C;" href="#"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 style="color: var(--primary-green);" class="mb-4">Schnellzugriff</h4>
+                    <ul class="quick-links">
+                        <li><a class="btn" href="#"><i class="fa fa-angle-right me-2"></i>Kontaktiert uns</a></li> <br>
+                        <li><a class="btn" href="#"><i class="fa fa-angle-right me-2"></i>AGB</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 style="color: var(--primary-green);" class="mb-4">Geschäftszeiten</h4>
+                    <p class="mb-1">Montag - Freitag</p>
+                    <h6 class="text-light">09:00 Uhr - 19:00 Uhr</h6>
+                    <p class="mb-1">Samstag</p>
+                    <h6 class="text-light">09:00 Uhr - 12:00 Uhr</h6>
+                    <p class="mb-1">Sonntag</p>
+                    <h6 class="text-light">Geschlossen</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 style="color: var(--primary-green);" class="mb-4">Newsletter</h4>
+                    <p>Erhalten Sie die neuesten Informationen und Angebote direkt in Ihr Postfach.</p>
+                    <div class="position-relative w-100">
+                        <input id="newsletter_input" class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                            type="text" placeholder="Ihre E-Mail">
+                        <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2"
+                            style="background-color: var(--primary-green); color: white;">Abonnieren</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a id="up-button" href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Page-specific JavaScript -->
+    <script src="js/onlineshop.js"></script>
+
+
+</body>
+
+</html>

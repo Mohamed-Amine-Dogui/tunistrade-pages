@@ -1,0 +1,214 @@
+:root {
+    --primary-green: #3ca163; /* Set your desired green color */
+}
+
+
+/* Font style*/
+
+h3 {
+    font-family: 'Lobster', sans-serif;
+    color: #0f6e34 !important;
+  }
+
+
+/* Global Styles */
+body {
+    overflow-x: hidden;
+    background-color: #f7faf7 !important;
+}
+
+.background-container {
+    height: 300px;
+    width: 100%;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9) opacity(0.9);
+}
+
+/* Logo Styles */
+#logo-img {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    height: 80px;
+    width: auto;
+    z-index: 1000;
+}
+
+@media (max-width: 760px) {
+    #logo-img {
+        left: 85%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Navbar Styles */
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #012c0c !important; /* Green background for navbar */
+    width: 100%;
+}
+
+.custom-navbar-content {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media (max-width: 992px) {
+    .custom-navbar-content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-navbar-content {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+/* Navbar Link Styles */
+.custom-navbar .nav-link:hover {
+    color: #b2e96a; /* Yellow link hover color */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #f7fff5; /* White for the active link */
+}
+
+/* Hover Effect */
+.hover-effect {
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Container */
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 100%;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* DataTable Pagination */
+.paginate_button a {
+    color: green !important;
+}
+
+.paginate_button.current a {
+    background-color: green !important;
+    color: white !important;
+}
+
+.paginate_button a:hover {
+    background-color: #228B22 !important;
+    color: white !important;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #013301 !important;
+    border-color: #013301 !important;
+    color: white !important;
+}
+
+/* Scroll to Top Button */
+
+#up-button {
+    position: fixed;
+    display: none;
+    right: 10px;
+    bottom: 20px;
+    z-index: 200;
+    background-color: #014712;
+    color: white;
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#up-button:hover {
+    background-color: #b2e96a; 
+}
+
+
+.footer .btn-square {
+    margin-right: 10px; /* Adds space between buttons */
+}
+
+#newsletter_input {
+    color: white; /* Set placeholder text color to white */
+    opacity: 1; /* Ensure the placeholder is fully visible */
+}
+
+h4 {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 40;
+    font-style: normal;
+  }
+
+
+  
+  h5 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 40;
+    font-style: italic;
+  }
+  
+  
+
+
+/* Quick links styling */
+.quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li {
+    margin-bottom: 10px; /* Space between each link */
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #a7ab97; /* Your desired color for the links */
+    font-size: 16px;
+    display: block; /* Ensure links take full width and stack vertically */
+    line-height: 1.6; /* Adjust spacing between lines */
+}
+
+.quick-links a:hover {
+    text-decoration: none;
+    color: var(--primary-green); /* Change color on hover */
+}
+
+.quick-links i {
+    color: var(--primary-green); /* Icon color */
+    margin-right: 8px; /* Add space between icon and text */
+}
