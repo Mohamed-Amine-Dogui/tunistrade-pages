@@ -1,6 +1,20 @@
 :root {
-    --primary-green: #3ca163; /* Set your desired green color */
+    --primary-green: #3ca163;
+    --secondary: #013b0f;
+    --title-green: #0f6e34;
+    --thirdary: #b2e96a;
+    --primary-orange: #da9500;
+    --secondary-orange:#e05c04;
+    --dark: #343a40;
+    --light: #f8f9fa;
 }
+
+body {
+    overflow-x: hidden;
+    background-color: #f7faf7 !important;
+}
+
+
 
 
 /* Font style*/
@@ -11,11 +25,21 @@ h3 {
   }
 
 
-/* Global Styles */
-body {
-    overflow-x: hidden;
-    background-color: #f7faf7 !important;
+
+/* Ensure the body and html take the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
 }
+
+/* Flex container for the page */
+.container-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the container takes up the full viewport height */
+}
+
+
 
 .background-container {
     height: 300px;

@@ -1,0 +1,239 @@
+/*--------------------------------------------------------------
+1. Cart Section
+--------------------------------------------------------------*/
+
+#cart-page {
+    padding: 40px 0;
+    background-color: var(--light);
+}
+
+#cart-page-inner {
+    padding: 20px;
+    background-color: transparent; /* Transparent background */
+}
+
+#cart-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#cart-table-header th {
+    color: var(--title-green); /* Text color */
+    border-bottom: 2px solid var(--secondary); /* Bottom border */
+    border-left: none; /* Remove vertical borders */
+    border-right: none; /* Remove vertical borders */
+    background-color: transparent; /* Transparent background */
+    text-align: center;
+    padding: 15px;
+}
+
+/* Hover effect for table rows */
+#cart-table-body tr:hover {
+    background-color: #e9eeeb; 
+}
+
+/* Styling the body rows without vertical lines */
+#cart-table-body td {
+    text-align: center;
+    padding: 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--secondary); /* Horizontal row separators */
+    border-right: none; /* Remove vertical lines */
+    border-left: none;  /* Remove vertical lines */
+    background-color: transparent; /* Transparent background for table rows */
+}
+
+
+#cart-item-1-image,
+#cart-item-2-image,
+#cart-item-3-image {
+    width: 5rem;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 1rem auto;
+}
+
+#cart-item-1-qty input,
+#cart-item-2-qty input,
+#cart-item-3-qty input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    margin: 0 5px;
+}
+
+#cart-item-1-qty .btn-minus,
+#cart-item-2-qty .btn-minus,
+#cart-item-3-qty .btn-minus,
+#cart-item-1-qty .btn-plus,
+#cart-item-2-qty .btn-plus,
+#cart-item-3-qty .btn-plus {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#cart-item-1-qty .btn-plus:hover,
+#cart-item-2-qty .btn-plus:hover,
+#cart-item-3-qty .btn-plus:hover {
+    background-color: var(--secondary);
+}
+
+#cart-item-1-qty .btn-minus,
+#cart-item-2-qty .btn-minus,
+#cart-item-3-qty .btn-minus {
+    background-color: var(--primary-orange);
+}
+
+#cart-item-1-qty .btn-minus:hover,
+#cart-item-2-qty .btn-minus:hover,
+#cart-item-3-qty .btn-minus:hover {
+    background-color: var(--secondary-orange);
+}
+
+
+
+/*--------------------------------------------------------------
+2. cart-summary Section
+--------------------------------------------------------------*/
+
+#cart-summary {
+    border: 1px solid var(--secondary);
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+#cart-summary-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#cart-summary-content p {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#cart-summary-content h2 {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid var(--secondary);
+}
+
+#cart-buttons button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#cart-buttons button:hover {
+    background-color: var(--secondary);
+}
+
+/* Styling for delete button */
+.btn-delete {
+    background-color: transparent;
+    border: none;
+    color: #a10000;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.btn-delete:hover {
+    color: #ff0000;
+}
+
+#coupon-section input {
+    width: calc(100% - 120px);
+    height: 40px;
+    border: 1px solid #dee2e6;
+    padding-left: 10px;
+}
+
+#coupon-section button {
+    width: 100px;
+    height: 40px;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#coupon-section button:hover {
+    background-color: var(--secondary);
+}
+
+/*--------------------------------------------------------------
+3. Footer
+--------------------------------------------------------------*/
+.footer h4 {
+    color: var(--primary);
+}
+
+.footer {
+    background-color: var(--dark);
+    color: #b0b9ae;
+    padding: 50px 0;
+}
+
+.footer a {
+    color: #b0b9ae;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer h4 {
+    color: var(--primary-green);
+}
+
+.footer .quick-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .quick-links a {
+    color: #b0b9ae;
+    transition: color 0.3s ease;
+}
+
+.footer .quick-links a:hover {
+    color: white;
+}
+
+.footer .btn.btn-link::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--primary-green);
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light);
+}
+
+
+.footer .business-hours h6 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
