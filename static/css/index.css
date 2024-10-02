@@ -307,3 +307,15 @@ a {
 h4 {
     margin-top: auto; /* Push the heading to the bottom */
 }
+
+
+/* Adjust space between the navbar and the title */
+#navbar {
+    margin-bottom: 1rem; /* Increase space below navbar, adjust as needed */
+}
+
+/* Optional: adjust the space at the top of the title */
+#id_title {
+    margin-top: 2rem; /* Adjust the space as needed */
+}
+
