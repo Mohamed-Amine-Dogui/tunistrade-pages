@@ -29,24 +29,6 @@
     text-align: center; 
 }
 
-@media (max-width: 576px) {
-    .carousel-main-title {
-        font-size: 2rem; 
-        bottom: 270px; 
-        width: 80%; 
-        max-width: 1000px; 
-    }
-}
-
-@media (max-width: 375px) {
-    .carousel-main-title {
-        font-size: 1.6rem; 
-        bottom: 270px; 
-        width: 80%; 
-        max-width: 1000px; 
-    }
-}
-
 /* Custom styles for titles and paragraphs in the carousel */
 #id_carousel h5 {
     font-size: 3rem;
@@ -331,8 +313,8 @@ h4 {
 13. Mobile View Adjustments
 --------------------------------------------------------------*/
 
+/* Adjustments for large mobile devices and tablets (up to 768px) */
 @media (max-width: 768px) {
-    /* Adjustments for content */
     .about-content {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -347,53 +329,120 @@ h4 {
         height: auto;
     }
 
-    /* Adjust carousel height and text sizes for mobile */
     .c-item {
         height: 480px;
     }
 
-    /* Carousel headline and paragraph for medium screens (up to 768px) */
+    /* Carousel headline and paragraph */
     #id_carousel h5 {
-        font-size: 1.75rem; /* Smaller headline for mobile */
+        font-size: 1.75rem;
         margin-top: 1.5rem;
     }
-    
+
     #id_carousel p {
-        font-size: 1rem; /* Smaller paragraph for mobile */
+        font-size: 1rem;
         margin-top: 0.5rem;
     }
+
+    /* Adjust carousel main title for screens up to 768px */
+    .carousel-main-title {
+        font-size: 3rem;
+        bottom: 320px;
+        width: 100%;
+        max-width: 1000px;
+    }
 }
 
+/* Adjustments for smaller mobile screens (up to 576px) */
 @media (max-width: 576px) {
-    /* Adjust carousel headline and paragraph for small screens (up to 576px) */
     #id_carousel h5 {
-        font-size: 1.25rem; /* Further adjust headline for small screens */
+        font-size: 1.25rem;
     }
 
     #id_carousel p {
-        font-size: 0.9rem; /* Smaller paragraph text */
+        font-size: 0.9rem;
+    }
+
+    .carousel-main-title {
+        font-size: 1.7rem;
+        bottom: 355px;
+        width: 100%;
+        max-width: 1000px;
     }
 }
 
+/* Adjustments for very small mobile screens (up to 390px) */
 @media (max-width: 390px) {
-    /* Adjust carousel headline and paragraph for very small screens (up to 375px) */
     #id_carousel h5 {
-        font-size: 1.2rem; /* Adjust the headline size for very small screens */
+        font-size: 1.2rem;
     }
 
     #id_carousel p {
-        font-size: 0.8rem; /* Adjust the paragraph text size for very small screens */
+        font-size: 0.8rem;
+    }
+
+    .carousel-main-title {
+        font-size: 1.7rem;
+        bottom: 355px;
+        width: 100%;
+        max-width: 1000px;
+    }
+}
+
+/* Adjustments for extra small mobile screens (up to 375px) */
+@media (max-width: 375px) {
+    #id_carousel h5 {
+        font-size: 1.2rem;
+    }
+
+    #id_carousel p {
+        font-size: 0.8rem;
+    }
+
+    .carousel-main-title {
+        font-size: 1.7rem;
+        bottom: 355px;
+        width: 100%;
+        max-width: 1000px;
+    }
+}
+
+/* Adjustments for extra small mobile screens (up to 344px) */
+@media (max-width: 375px) {
+    #id_carousel h5 {
+        font-size: 1.2rem;
+    }
+
+    #id_carousel p {
+        font-size: 0.8rem;
+    }
+
+    .carousel-main-title {
+        font-size: 1.7rem;
+        bottom: 320px;
+        width: 100%;
+        max-width: 1000px;
     }
 }
 
 
-@media (max-width: 375px) {
-    /* Adjust carousel headline and paragraph for very small screens (up to 375px) */
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+    .c-item {
+        height: 500px;
+    }
+
+    .carousel-main-title {
+        font-size: 3.5rem;
+        bottom: 280px;
+        width: 100%;
+        max-width: 1000px;
+    }
+
     #id_carousel h5 {
-        font-size: 1.2rem; /* Adjust the headline size for very small screens */
+        font-size: 3rem;
     }
 
     #id_carousel p {
-        font-size: 0.8rem; /* Adjust the paragraph text size for very small screens */
+        font-size: 1rem;
     }
 }
