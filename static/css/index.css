@@ -38,6 +38,15 @@
     }
 }
 
+@media (max-width: 375px) {
+    .carousel-main-title {
+        font-size: 1.6rem; 
+        bottom: 270px; 
+        width: 80%; 
+        max-width: 1000px; 
+    }
+}
+
 /* Custom styles for titles and paragraphs in the carousel */
 #id_carousel h5 {
     font-size: 3rem;
@@ -47,27 +56,6 @@
 #id_carousel p {
     font-size: 1.5rem;
     margin-top: 1rem; /* mt-2 equivalent */
-}
-
-/* Media Queries for smaller screens */
-@media (max-width: 768px) {
-    #id_carousel h5 {
-        font-size: 1.75rem; /* Smaller headline for mobile */
-        margin-top: 1.5rem;
-    }
-    #id_carousel p {
-        font-size: 1rem; /* Smaller paragraph for mobile */
-        margin-top: 0.5rem;
-    }
-}
-
-@media (max-width: 576px) {
-    #id_carousel h5 {
-        font-size: 1.25rem; /* Further adjust headline for very small screens */
-    }
-    #id_carousel p {
-        font-size: 0.9rem; /* Smaller paragraph text */
-    }
 }
 
 /*--------------------------------------------------------------
@@ -344,6 +332,7 @@ h4 {
 --------------------------------------------------------------*/
 
 @media (max-width: 768px) {
+    /* Adjustments for content */
     .about-content {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -358,34 +347,12 @@ h4 {
         height: auto;
     }
 
-    /* Carousel Adjustments */
-    #id_carousel h5 {
-        font-size: 1.75rem; /* Smaller headline for mobile */
-        margin-top: 1.5rem;
-    }
-    #id_carousel p {
-        font-size: 1rem; /* Smaller paragraph for mobile */
-        margin-top: 0.5rem;
-    }
-}
-
-@media (max-width: 576px) {
-    #id_carousel h5 {
-        font-size: 1.25rem; /* Further adjust headline for very small screens */
-    }
-    #id_carousel p {
-        font-size: 0.9rem; /* Smaller paragraph text */
-    }
-}
-
-/* Media Queries for Mobile Devices */
-@media (max-width: 768px) {
-    /* Adjust carousel height for mobile */
+    /* Adjust carousel height and text sizes for mobile */
     .c-item {
         height: 480px;
     }
 
-    /* Adjust carousel text sizes for mobile */
+    /* Carousel headline and paragraph for medium screens (up to 768px) */
     #id_carousel h5 {
         font-size: 1.75rem; /* Smaller headline for mobile */
         margin-top: 1.5rem;
@@ -397,13 +364,36 @@ h4 {
     }
 }
 
-/* Further Adjustments for Very Small Screens */
 @media (max-width: 576px) {
+    /* Adjust carousel headline and paragraph for small screens (up to 576px) */
     #id_carousel h5 {
-        font-size: 1.25rem; /* Further adjust headline for very small screens */
+        font-size: 1.25rem; /* Further adjust headline for small screens */
     }
-    
+
     #id_carousel p {
         font-size: 0.9rem; /* Smaller paragraph text */
+    }
+}
+
+@media (max-width: 390px) {
+    /* Adjust carousel headline and paragraph for very small screens (up to 375px) */
+    #id_carousel h5 {
+        font-size: 1.2rem; /* Adjust the headline size for very small screens */
+    }
+
+    #id_carousel p {
+        font-size: 0.8rem; /* Adjust the paragraph text size for very small screens */
+    }
+}
+
+
+@media (max-width: 375px) {
+    /* Adjust carousel headline and paragraph for very small screens (up to 375px) */
+    #id_carousel h5 {
+        font-size: 1.2rem; /* Adjust the headline size for very small screens */
+    }
+
+    #id_carousel p {
+        font-size: 0.8rem; /* Adjust the paragraph text size for very small screens */
     }
 }
