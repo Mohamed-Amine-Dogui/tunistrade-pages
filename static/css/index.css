@@ -1,47 +1,41 @@
 /*--------------------------------------------------------------
-1. Navbar and Title Spacing
---------------------------------------------------------------*/
-
-/* Adjust space between the navbar and the title */
-#navbar {
-    margin-bottom: 1rem; /* Increase space below navbar, adjust as needed */
-}
-
-/* Optional: adjust the space at the top of the title */
-#id_title {
-    margin-top: 2rem; /* Adjust the space as needed */
-}
-
-/*--------------------------------------------------------------
-2. Section Titles
---------------------------------------------------------------*/
-
-/* Styling for section titles */
-.section-title {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.section-title p {
-    color: var(--primary);
-    font-style: italic;
-    font-size: 16px;
-}
-
-/*--------------------------------------------------------------
 3. Carousel Section
 --------------------------------------------------------------*/
-
-/* carousel */
 .c-item {
-    height: 480px;
+    height: 700px;
 }
 
 .c-img {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
+}
+
+/* Main Title Styling */
+.carousel-main-title {
+    font-size: 4rem; 
+    font-weight: 200;
+    font-style: italic;
+    color: white !important; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 1rem; 
+    position: absolute;
+    bottom: 500px; 
+    left: 50%;
+    width: 80%; 
+    max-width: 1000px; 
+    transform: translateX(-50%);
+    z-index: 2; 
+    text-align: center; 
+}
+
+@media (max-width: 576px) {
+    .carousel-main-title {
+        font-size: 2rem; 
+        bottom: 270px; 
+        width: 80%; 
+        max-width: 1000px; 
+    }
 }
 
 /* Custom styles for titles and paragraphs in the carousel */
@@ -379,6 +373,36 @@ h4 {
     #id_carousel h5 {
         font-size: 1.25rem; /* Further adjust headline for very small screens */
     }
+    #id_carousel p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust carousel height for mobile */
+    .c-item {
+        height: 480px;
+    }
+
+    /* Adjust carousel text sizes for mobile */
+    #id_carousel h5 {
+        font-size: 1.75rem; /* Smaller headline for mobile */
+        margin-top: 1.5rem;
+    }
+    
+    #id_carousel p {
+        font-size: 1rem; /* Smaller paragraph for mobile */
+        margin-top: 0.5rem;
+    }
+}
+
+/* Further Adjustments for Very Small Screens */
+@media (max-width: 576px) {
+    #id_carousel h5 {
+        font-size: 1.25rem; /* Further adjust headline for very small screens */
+    }
+    
     #id_carousel p {
         font-size: 0.9rem; /* Smaller paragraph text */
     }
