@@ -13,31 +13,33 @@
 
 /* Main Title Styling */
 .carousel-main-title {
-    font-size: 4rem; 
+    font-size: 4rem;
     font-weight: 200;
     font-style: italic;
-    color: white !important; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    margin-bottom: 1rem; 
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
     position: absolute;
-    bottom: 500px; 
+    bottom: 500px;
     left: 50%;
-    width: 80%; 
-    max-width: 1000px; 
+    width: 80%;
+    max-width: 1000px;
     transform: translateX(-50%);
-    z-index: 2; 
-    text-align: center; 
+    z-index: 2;
+    text-align: center;
 }
 
 /* Custom styles for titles and paragraphs in the carousel */
 #id_carousel h5 {
     font-size: 3rem;
-    margin-top: 3rem; /* mt-5 equivalent */
+    margin-top: 3rem;
+    /* mt-5 equivalent */
 }
 
 #id_carousel p {
     font-size: 1.5rem;
-    margin-top: 1rem; /* mt-2 equivalent */
+    margin-top: 1rem;
+    /* mt-2 equivalent */
 }
 
 /*--------------------------------------------------------------
@@ -70,7 +72,8 @@
 }
 
 .about-images img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
+    /* Slight zoom on hover */
 }
 
 /* Ensure equal padding between image rows */
@@ -146,8 +149,9 @@
 .separator-line {
     margin-bottom: 1rem;
     margin-top: 1rem;
-    border-top: 1px solid #ccc; /* Adjust thickness and color */
-    width: 70%; 
+    border-top: 1px solid #ccc;
+    /* Adjust thickness and color */
+    width: 70%;
 }
 
 /*--------------------------------------------------------------
@@ -180,11 +184,14 @@
 }
 
 .footer .quick-links a {
-    flex: 0 50%; /* Make each link take 50% of the space */
+    flex: 0 50%;
+    /* Make each link take 50% of the space */
     color: #b0b9ae;
     transition: color 0.3s ease;
-    text-align: left; /* Align text to the left */
-    margin-bottom: 10px; /* Add space between the links */
+    text-align: left;
+    /* Align text to the left */
+    margin-bottom: 10px;
+    /* Add space between the links */
 }
 
 .footer .quick-links a:hover {
@@ -275,13 +282,17 @@
 
 /* General link styling */
 a {
-    cursor: pointer; /* Show a pointer cursor when hovering over the block */
+    cursor: pointer;
+    /* Show a pointer cursor when hovering over the block */
 }
 
 a .bg-white:hover {
-    background-color: #f8f9fa; /* Light gray background on hover */
-    transform: translateY(-5px); /* Lift the button slightly on hover */
-    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+    background-color: #f8f9fa;
+    /* Light gray background on hover */
+    transform: translateY(-5px);
+    /* Lift the button slightly on hover */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition effect */
 }
 
 /*--------------------------------------------------------------
@@ -290,23 +301,27 @@ a .bg-white:hover {
 
 /* Equal Height Cards */
 .equal-height {
-    height: 100%; /* Make sure both cards take up equal height */
+    height: 100%;
+    /* Make sure both cards take up equal height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .equal-height img {
-    transition: transform 0.3s ease-in-out; /* Smooth transition for image zoom */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition for image zoom */
     object-fit: contain;
 }
 
 .equal-height:hover img {
-    transform: scale(1.1); /* Zoom in on image */
+    transform: scale(1.1);
+    /* Zoom in on image */
 }
 
 h4 {
-    margin-top: auto; /* Push the heading to the bottom */
+    margin-top: auto;
+    /* Push the heading to the bottom */
 }
 
 /*--------------------------------------------------------------
@@ -353,25 +368,50 @@ h4 {
     }
 }
 
-/* Adjustments for smaller mobile screens (up to 576px) */
-@media (max-width: 576px) {
+
+/* Media Queries */
+
+/* Large Mobile Devices and Tablets (up to 768px) */
+@media (max-width: 768px) {
+    .about-content {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .about-section-title {
+        font-size: 2rem;
+    }
+
+    .about-images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .c-item {
+        height: 480px;
+    }
+
+    /* Carousel Headline and Paragraph */
     #id_carousel h5 {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
+        margin-top: 1.5rem;
     }
 
     #id_carousel p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
     }
 
+    /* Adjust Carousel Main Title */
     .carousel-main-title {
-        font-size: 1.7rem;
-        bottom: 355px;
+        font-size: 3rem;
+        bottom: 320px;
         width: 100%;
         max-width: 1000px;
     }
 }
 
-/* Adjustments for very small mobile screens (up to 390px) */
+/* iPhone 12 and Similar Devices (up to 390px) */
 @media (max-width: 390px) {
     #id_carousel h5 {
         font-size: 1.2rem;
@@ -389,7 +429,7 @@ h4 {
     }
 }
 
-/* Adjustments for extra small mobile screens (up to 375px) */
+/* Extra Small Mobile Screens (up to 375px) */
 @media (max-width: 375px) {
     #id_carousel h5 {
         font-size: 1.2rem;
@@ -407,8 +447,8 @@ h4 {
     }
 }
 
-/* Adjustments for extra small mobile screens (up to 344px) */
-@media (max-width: 375px) {
+/* Extra Small Mobile Screens (up to 344px) */
+@media (max-width: 344px) {
     #id_carousel h5 {
         font-size: 1.2rem;
     }
@@ -425,7 +465,7 @@ h4 {
     }
 }
 
-
+/* Media Query with Both Width and Height */
 @media screen and (max-width: 1024px) and (max-height: 600px) {
     .c-item {
         height: 500px;
